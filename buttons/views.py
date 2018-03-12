@@ -24,7 +24,9 @@ def message(request):
     if selected == '영어사전':
         return JsonResponse({
             'type': 'text',
-            'message': res_text,
+            'message': {
+                'text': res_text
+            }
         })
 
     elif selected == '케이블 영화채널 시간표':
