@@ -15,7 +15,7 @@ def dict_search(word):
 
     soup = BeautifulSoup(response.text, 'html.parser')
     if soup.find('span', class_='fnt_k05'):
-        text = soup.find('span', class_='fnt_k05')
+        text = soup.find('span', class_='fnt_k05').text
     else:
         raise AttributeError("That vocabulary doesn't exist in the dictonary")
 
