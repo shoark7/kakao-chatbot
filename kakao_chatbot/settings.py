@@ -26,7 +26,9 @@ SECRET_KEY = 'zo!jol&rspi6ky-1v%w0@52%o^_ld(u=n$+p%g&8fvgm52&jpr'
 DEBUG = False
 
 ALLOWED_HOSTS = [
-    'shoark7.pythonanywhere.com',        
+    'shoark7.pythonanywhere.com',
+    '127.0.0.1',
+    'localhost',
 ]
 
 
