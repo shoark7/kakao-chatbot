@@ -7,7 +7,7 @@ from django.views.decorators.csrf import csrf_exempt
 from apis.dict_apis import dict_search
 
 
-def buttons(request):
+def keyboard(request):
     return JsonResponse({
         'type': 'buttons',
         'buttons': ['영어사전', '케이블 영화채널 시간표'],
@@ -41,7 +41,6 @@ def message(request):
         })
     else:
         search_result = dict_search(selected)
-        print(search_result)
         return JsonResponse({
             'type': 'text',
             'message': {
